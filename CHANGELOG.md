@@ -1,5 +1,9 @@
 # CHANGELOG
 
+### 0.5.0.1
+
+- support monad-control-1.0.0.0
+
 ### 0.5
 
 - license is now BSD3!;
