@@ -28,8 +28,7 @@ module Control.Monad.Journal.Class (
   , absorb
   ) where
 
-import Control.Monad ( Monad )
-import Control.Monad.Trans ( MonadIO, MonadTrans, lift, liftIO )
+import Control.Monad.Trans ( MonadIO, lift, liftIO )
 import Control.Monad.Trans.Either ( EitherT )
 import Control.Monad.Trans.Identity ( IdentityT )
 import Control.Monad.Trans.List ( ListT )
@@ -38,7 +37,7 @@ import Control.Monad.Trans.RWS ( RWST )
 import Control.Monad.Trans.Reader ( ReaderT )
 import Control.Monad.Trans.State ( StateT )
 import Control.Monad.Trans.Writer ( WriterT )
-import Data.Monoid ( Monoid, mappend, mempty )
+import Data.Monoid ( Monoid )
 
 -- |This typeclass provides the ability to accumulate 'Monoid' in a monad
 -- via the 'journal' function; to get them via the 'history' function and
